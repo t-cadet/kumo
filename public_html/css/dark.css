@@ -1,0 +1,38 @@
+/*General*/
+	body{
+		color: silver;
+		background-color: rgb(10,10,10);
+	}
+	.footer {
+	    border-top-color: rgb(50,50,50);
+	    color: #4169E1; /*royalblue;*/
+	}
+	h2{
+		color: #32CD32; /*limegreen;*/
+	}
+
+/*Index.html.twig*/  
+	.novel_title{
+		color: rgb(235,25,25);
+	}    
+	.index_entry{
+		color: #BF00A8; /*my violet*/
+	}
+	.index_date {
+		color: inherit;
+	}
+	.index_entry:hover, .index_entry:focus{
+		color: #DC143C; /*crimson;*/
+		border-bottom-color: #DC143C; /*crimson;*/
+	}
+
+/*Chapter.html.twig*/
+	.chapter_title{
+		color: #DC143C; /*crimson;*/
+	}
+	.page_choice a {
+		color: #9400D3; /*darkviolet;*/
+	}
+
+
+

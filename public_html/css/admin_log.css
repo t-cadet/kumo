@@ -1,0 +1,25 @@
+@media screen and (min-device-width: 1650px) {
+	.container {
+		width: 700px !important;
+		height: 700px !important;
+		margin-top: -350px !important;
+		margin-left: -350px !important;
+	}
+	 .main:after, .big:after, .small:after {  
+		width: 700px !important;
+		height: 700px !important;
+	}
+}
+
+@media screen and (min-device-width: 2400px) {
+	.container {
+		width: 950px !important;
+		height: 9500px !important;
+		margin-top: -475px !important;
+		margin-left: -475px !important;
+	}
+	 .main:after, .big:after, .small:after {  
+		width: 950px !important;
+		height: 950px !important;
+	}
+}

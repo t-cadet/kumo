@@ -1,0 +1,41 @@
+/*General*/
+	body{
+		color: black;
+		background-color: #FFFACD; /*lemonchiffon;*/
+	}
+	.footer {
+	    border-top-color: #F0E68C; /*khaki;*/
+	    color: #CD5C5C; /*indianred;*/
+	}
+	h2{
+		color: #D2691E; /*chocolate;*/
+	}
+
+/*Index.html.twig*/  
+	.novel_title{
+		color: #FFA500; /*orange*/
+	}  
+	.index_entry{
+		color: #FF6347; /*tomato;*/
+	}
+	.index_date {
+		color: #D19275; /*feldspar*/
+	}
+	.index_entry:hover, .index_entry:focus{
+		color: #B22222; /*firebrick;*/
+		border-bottom-color: #B22222; /*firebrick;*/
+	}
+
+/*Chapter.html.twig*/
+	.chapter_title{
+		color: #FF6347; /*tomato;*/
+	}
+	.page_choice a {
+		color: #FF8C00; /*darkorange;*/
+	}
+
+
+
+
+
+

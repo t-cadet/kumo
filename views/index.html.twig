@@ -1,0 +1,24 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<h1 class="novel_title">Je suis une araignée, ça vous dérange ?</h1>
+<div class="row">
+	<div class="synopsis col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+		<h2>Synopsis</h2> 
+		<p>Un monde dans lequel héros et roi-démon luttent continuellement. Leur formidable magie a voyagé par-delà les mondes pour exploser dans la salle de classe d’un certain lycée. Les élèves tués par l’explosion se sont réincarnés dans une dimension parallèle. Notre héroïne qui a déjà la plus mauvaise réputation de la classe, s’est vue renaître de toutes les choses possibles en une araignée-démon. Seulement, elle accepte cette nouvelle situation avec une volonté si forte qu’elle en est étrange, et s’adapte relativement vite. Voici l’histoire d’une héroïne devenue araignée-démon, survivant et allant de l’avant tant bien que mal.</p>
+	</div>
+</div>
+<div class="index_table">
+	{% for chapter in chapters %}
+		<article class="row">
+		    <a  class="index_entry col-sm-11 col-xs-12" href="{{ path('chapter', { 'id': chapter.id }) }}">
+		    	<span class="index_prefix col-md-2 col-xs-1"> {{ chapter.prefix|raw }} </span>
+		    	<span class="index_title col-lg-8 col-sm-9 col-xs-10"> {{ chapter.title|raw }} </span>
+		    	<span class="index_date col-md-1 col-sm-2 hidden-xs"> {{ chapter.date|date("d/m/Y") }} </span>
+		    </a>
+		</article>
+	{% endfor %}
+</div>
+{% endblock %}

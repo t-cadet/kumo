@@ -1,0 +1,146 @@
+/* general menu */
+    #mySidenav > a {
+        position: fixed;
+    	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+      	transform: translateY(-105px); /* tiré de 1.42*sa hauteur(=73.57) */
+        left: -80px;
+        width: 100px;        
+        transition: 0.3s;
+        color: white;
+        font-size: 20px;
+        border-radius: 0 5px 5px 0;
+        z-index: 10;
+    }
+
+    #mySidenav > a:hover {
+        left: 0;
+    }
+    #home {
+        top: 20px;
+        background-color: #4CAF50; /*some green*/
+        padding: 0px;
+    }
+
+    #infos {
+        top: 80px;
+        background-color: #2196F3; /*some blue*/
+        padding: 0px;
+    }
+    #home span, #infos span {
+        display: block;
+        padding: 15px;
+    }
+    #home span:hover, #infos span:hover {
+        cursor: pointer;
+    }
+
+/*portable device*/ 
+    @media (max-width: 768px) {
+        #home span, #infos span {
+            display: inline;
+            padding: 0;
+            margin-left: -12px;
+        }
+        #infos, #home {
+            padding: 15px;
+        }
+    }   
+    
+
+
+
+/*options menu*/
+    #options {
+        top: 140px;
+        background-color: #f44336; /*some red*/
+        padding: 15px 0;
+    }
+    #options:hover li {
+        display: block;
+    }
+    #options:hover span {
+        display: block;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    #options li {
+        display: none;
+        font-size: 63%;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 5px 0;
+        text-align: center;
+        cursor: pointer;
+    }
+    #options li:hover {
+        font-style: oblique;
+    }
+    #theme{
+        border-top: 1px solid white;
+    }
+    #font_size{
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+    }
+    #options li div {
+    	display: none;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: none;
+        margin: 5px;
+    }
+    #options li:hover div {
+        text-align: center;
+
+    }
+    #options li div:hover {
+    	transition: 0.1s;
+    	border-radius: 0;
+    	margin: 0;
+        color: black;
+        text-decoration: none;
+    	display: block;
+    	background-color: #f1f1f1; /*some white*/
+    }
+
+/*font size scaling*/
+    #font_range_container {
+        display: none;
+        position: fixed;
+        top: 90vh;
+        left: 50vw;
+        transform: translate(-50%,-100%);
+        z-index: 10;
+
+        padding: 15px 40px;
+        border-radius: 10px;
+        background: rgba(0,0,0,0.95); /*transparent black*/
+    }
+    #font_range_container div {
+        color: white;
+        text-align: center;
+    }
+    #closeFontSize {
+        position: absolute;
+        right: 7px;
+        top: 1px;
+        font-weight: bold;
+        color: red;
+        font-size: 175%;
+    }
+    #closeFontSize:hover {
+        color: orangered;
+    }
+    #resetFontSize {
+        position: absolute;
+        left: 7px;
+        top: 1px;
+        font-weight: bold;
+        color: green;
+        font-size: 150%;
+    }
+    #resetFontSize:hover {
+        color: lime;
+    }

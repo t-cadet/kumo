@@ -1,0 +1,36 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Informations{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-0 col-md-5 col-sm-offset-3 col-sm-6">
+			<div class = "infos_text">
+				<h2>Informations générales</h2>
+				<p><em>Titre</em> : 蜘蛛ですが、なにか？</p>
+				<p><em>Prononciation</em> : Kumo desu ga, nani ka ?</p>
+				<p><em>Titre français</em> : Je suis une araignée, ça vous dérange ?</p>
+				<p><em>Auteur</em> : 馬場翁 (Baba Okina)</p>
+				<p><em>Texte original</em> : <a href="http://ncode.syosetu.com/n7975cr/">蜘蛛ですが、なにか？</a></p>
+				<p><em>Chapitres disponibles</em> : {{count}} </p>
+				<p><em>Traduit du japonais par</em> : Tristan Cadet</p>
+				<p><em>Contact</em> : projet.kumo@gmail.com</p>
+				<p><em>Remarque technique</em> : les notes de traduction sont symbolisées par un astérisque, il est coloré en rouge s'il s'agit d'une simple note et en bleu si la note s'accompagne d'un lien URL. Les notes s'affichent au survol de l'astérisque par la souris, elles ne sont donc pas accessibles sur les appareils tactiles.</p>
+			</div>
+		</div>
+		<div class="col-md-7 col-xs-12">
+			<div class="translator_word">
+				<h2>Mot du traducteur :</h2>
+				<p>
+				Salut, j'espère que vous appréciez ce web novel, je suis un simple étudiant en japonais et c'est la première fois que je me lance dans un projet de traduction, il est donc possible qu'il y ait des imprécisions ou des erreurs de traduction. De même j'essaie de ne pas faire de fautes de français, mais on n'est jamais à l'abri, veuillez donc me pardonner. Je ne pense pas traduire tous les chapitres et je ne garantis pas un rhytme régulier de publication, mais je vais tout de même faire de mon mieux jusqu'à la fin de l'été (2017), c'est-à-dire jusqu'à la reprise des cours, après quoi je n'aurai plus autant de temps.</p>
+				<p>
+				Pour parler un peu des difficultés de traduction, le texte prend beaucoup de libertés au niveau des transitions entre récit et pensées du personnage principal, chose que je ne suis pas habitué à voir dans les livres français. Le japonais contient aussi de nombreuses interjections et particules difficiles à traduire littéralement. J'espère malgré tout réussir à vous offrir une traduction de bonne facture. </p>
+				<p>
+				Pour ceux qui ne voudraient pas attendre, il existe <a href="https://turb0translation.blogspot.fr/2015/06/kumo-desuga-nanika-chapter-1.html">ici</a> une traduction anglaise et vous pouvez bien sûr accéder à la version japonaise dont le lien est fourni dans l'encart <em>Informations générales</em> si vous parlez la langue. Sachez aussi qu'il existe une adaptation en manga. Sur ce, j'arrête de parler, et je vous laisse à votre lecture ! 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

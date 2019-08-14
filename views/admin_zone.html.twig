@@ -1,0 +1,36 @@
+{% extends 'layout.html.twig' %}
+{% form_theme chapterForm 'bootstrap_3_horizontal_layout.html.twig' %}
+
+{% block title %}Ajouter/Éditer un chapitre{% endblock %}
+
+{% block content %}
+    <h2 class="text-center">{{ block('title') }}</h2>
+    {% for flashMessage in app.session.flashbag.get('success') %}
+        <div class="alert alert-success">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
+    <div class="well" style="background: none; border: 2px solid lime;">
+        {{ form_start(chapterForm) }}
+        
+        {{ form_row(chapterForm.id)}}                   
+        {{ form_widget(chapterForm.id)}}
+
+        {{ form_row(chapterForm.prefix)}}                   
+        {{ form_widget(chapterForm.prefix)}}
+
+        {{ form_row(chapterForm.title)}}                   
+        {{ form_widget(chapterForm.title)}}
+
+        {{ form_row(chapterForm.content) }}
+        {{ form_widget(chapterForm.content) }}
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-3">
+                <input type="submit" class="btn btn-primary" value="Save" />
+            </div>
+        </div>
+        {{ form_end(chapterForm) }}
+    </div>    
+{% endblock %}
